@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1234567890",
+    "project_id": "bug-report-expo-apple-auth",
+    "storage_bucket": "test"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "test",
+        "android_client_info": {
+          "package_name": "com.rybaier.bug_report_expo_apple_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "test",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "test"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "test",
+              "client_type": 3
+            },
+            {
+              "client_id": "test",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rybaier.bug-report-expo-apple-auth"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

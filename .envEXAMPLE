@@ -1,0 +1,7 @@
+GOOGLE_WEB_CLIENT_ID=test
+GOOGLE_IOS_API_KEY=test
+GOOGLE_ANDROID_API_KEY=test
+GOOGLE_MAPS_API_KEY=test
+GOOGLE_SERVICES_PLIST=./config/GoogleService-Info.plist
+GOOGLE_SERVICES_JSON=./config/google-services.json
+
