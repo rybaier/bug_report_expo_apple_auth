@@ -6,12 +6,17 @@
 
 When building an app that uses the `expo-apple-authentication` library version 7.1 in VScode with Xcode 15.2  the following error occurs in the `AppleAuthenticationModule.swift` file due to Swift being unable to infer the return type for a closure containing multiple statements.
 
+### Expected Behavior
+The function should successfully compile and return a formatted string, but the closure's return type is not inferred due to multiple statements inside the closure.
+
+### Actual Behavior
+Xcode produces the error: cannot infer return type for closure with multiple statements; add explicit type to disambiguate.
+
 ## Steps to Reproduce
 1. create .env from .envExample (you do not need to change anything just create the file)
 3. run ```npx expo prebuild```
 4. run ```npx expo run ios```
 5. observe the following error in the `AppleAuthenticationModule.swift` file:
-
 
 
 ### Error Message
@@ -31,7 +36,7 @@ When building an app that uses the `expo-apple-authentication` library version 7
   xcodebuild produces the error: cannot infer return type for closure with multiple statements; add explicit type to disambiguate.
   
   
-  ## Fix [copy of AppleAuthenticationModule.swift]()
+  ## Fix [copy of AppleAuthenticationModule.swift](https://github.com/rybaier/bug_report_expo_apple_auth/blob/main/AppleAuthenticationModule.swift)
   in /<path to node_modules>/node_modules/expo-apple-authentication/ios/AppleAuthenticationModule.swift:51:32
 adding ``` -> String```  to line 51 for the function 
   ```
